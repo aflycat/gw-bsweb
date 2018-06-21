@@ -1,0 +1,42 @@
+.gw-tabs{
+    height: 100%;
+    position: relative;
+    padding-top: 42px;
+    .tabs-nav{
+        display: flex;
+        position: absolute;
+        border-left: 1px solid #ddd;
+        border-bottom: 1px solid #eee;
+        top: 0;
+        left: 0;
+        width: 100%;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            flex-shrink: 0;
+            li{
+                min-width: 80px;
+                text-align: center;
+                line-height: 1.5;
+                border-top: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                transition: all 440ms;
+                cursor: pointer;
+                font-size: 15px;
+                padding: 8px 16px;
+                background-color: #f9f9f9;
+                &.active{
+                    box-shadow: 0px 1px 0px #2d8cf0 inset;
+                    background-color: #fff;
+                    color: #2d8cf0;
+                }
+            }
+        }
+    }
+    .tabs-container{
+        .ivu-card-bordered{    border: 0;border-color: 0;}
+        height: 100%;
+        // overflow: hidden;
+        // overflow-y: auto;
+    }
+}

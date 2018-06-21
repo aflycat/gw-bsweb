@@ -1,0 +1,132 @@
+@import './valuables';
+.schedule{
+    $scheduleLiHeight: 40px;
+    $contentTop: 40px;
+    $IconFontSize: 22px;
+    $searchHeight: 32px;
+
+    width: 100%;min-width: 700px;height: 100% !important;
+    .ivu-icon{color: #{$btnBackground};}
+    .ivu-checkbox-checked .ivu-checkbox-inner{border-color: #{$btnBackground};background-color: #{$btnBackground};}
+
+    .schedule_bottom{
+        height: 100%;
+        //切换卡
+        &>.ivu-tabs.ivu-tabs-card{height: 100%;overflow: visible;}
+        &>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar{margin-bottom: 0;border: 0;}
+        &>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab{font-size: 15px;
+        min-width: 80px;height: 40px;margin-right: 0;border-radius: 0;border: 0;text-align: center;
+        border-left: 1px solid #ddd; background: #F9F9F9; padding: 8px 16px;}
+        &>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active:before{
+        content: '';display: block; width: 100%;height: 1px;background: #3399ff;position: absolute;top: 0;left: 0; }
+        &>.ivu-tabs.ivu-tabs-card>.ivu-tabs-bar>.ivu-tabs-nav-container{height: 40px;}
+        & .ivu-tabs-nav{border: 1px solid #ddd;border-left: 0;}
+        & .ivu-table th,& .ivu-table-stripe .ivu-table-body tr:nth-child(2n) td,
+        & .ivu-table-stripe .ivu-table-stripe .ivu-table-fixed-body tr:nth-child(2n) td{background: white; }
+        & .ivu-table-stripe .ivu-table-body tr:nth-child(2n+1) td,
+        & .ivu-table-stripe .ivu-table-stripe .ivu-table-fixed-body tr:nth-child(2n+1) td{background: #F9F9F9;}
+        .ivu-select{width: 90%;height: 100%;}
+        .ivu-select-single .ivu-select-selection{ border: 0;background: transparent;}
+        .ivu-select-arrow{display: none;}
+        .publicSchedule{ 
+            position: absolute;left: 0;top: 40px;right: 0;bottom: 0;border-top: 1px solid #eee;
+            //搜索
+            &>.Schedule_search{
+                position: absolute;right: 0;top: -#{$searchHeight+10};display: inline-block;
+                &>span{
+                  height: #{$searchHeight};display: inline-block;position: relative;border: 1px solid #ddd;border-radius: 20px;overflow: hidden; 
+                  vertical-align: middle;margin:0 10px;
+                  i{font-size: 18px; position: absolute; left: 12px;top: 7px;}
+                  input{font-size: 0.9rem;height: 100%;padding-left:  40px;border: 0;outline: none;}
+                }
+                .btn_search{font-size: 0.9rem;color: #666;display: inline-block;height: 100%;background-color: transparent;border: 0;cursor: pointer;outline: none;}
+                .AddLine {font-size: #{$btnfontSize};color: #{$btnFontColor};width: #{$btnW};height: #{$btnH};background-color: #{$btnBackground};border-color: #{$btnBackground};border-radius: 0;padding: 0;}
+            }
+            //容器
+            &>div{height: 100%;}
+            //人员
+            .user-table{tr th,tr td{width: 16.666%;}}
+            .AlmReport-table{tr th,tr td{width: 33.33%;}}
+            .WeekAlmReport-table{tr th,tr td{width: 20%;}}
+            .SpeAlmReport-table{tr th,tr td{width: 25%;}}
+            
+            tbody tr td{i{font-size: #{ $IconFontSize/1.2};margin: 0 10px;color: #{$btnBackground};}}
+            //设备分组范围
+            &>.EquipmentLeft{
+                width: 25%;display: inline-block;position: absolute; left: 0;top: 0;bottom: 0;
+                h4{font-size: 0.9rem;font-weight: 200;}
+                button {color: #{$btnFontColor};width: #{$btnW};height: #{$btnH};background-color: #{$btnBackground};border-color: #{$btnBackground};border-radius: 0;padding: 0;}
+                &>div{height: #{$contentTop};line-height: #{$contentTop};text-indent: 10%;border-left: 1px solid #eee;
+                    &>.rightBtn{text-align: right;Button{font-size: 14px;cursor: pointer;outline: none;}}
+                }
+                &>ul{
+                        width: 100%;position: absolute; left: 0;top: #{$contentTop};right: 0;bottom: 0;overflow-y: auto; border-right: 1px solid #eee;
+                        &>li{
+                            height: #{$scheduleLiHeight};line-height: #{$scheduleLiHeight};    border-left: 1px solid #eee;
+                            // &:nth-child(2n){background: #{$doubleColor};}
+                            &:nth-child(2n+1){background: #{$tbTRBgc};}
+                            &>a:hover{color: #{$btnBackground} !important;background: #{$tbRowHover};}
+                            &.selectEquipName{background: #{$tbRowHover};a{color: #{$btnBackground} !important;}}
+                            
+                            &>div{width: 100%;height: 100%;border: 0;position: relative;overflow: hidden;
+                                &>.alignCenter{text-align: center;}
+                                input{width: 100%;border: 0;outline: none;text-indent: 20px;}
+                                a{font-size: 0.8rem;color: #666;width: 100%;height: 100%;display: inline-block;text-indent: 10%;}
+                                i{font-size: #{$IconFontSize/1.2};line-height: 40px;cursor: pointer;color: #{$btnBackground};}
+                            }
+
+                        }
+                   }
+            }
+            &>.EquipmentRight{
+                width: 75%;display: inline-block;position: absolute; right: 0;top: 0;bottom: 0;
+                h4{font-size: 0.9rem;font-weight: 200;}
+                button {color: #{$btnFontColor};width: #{$btnW};height: #{$btnH};background-color: #{$btnBackground};border-color: #{$btnBackground};border-radius: 0;padding: 0;}
+                &>div{height: #{$contentTop};line-height: #{$contentTop};text-indent: 5%;
+                     &>.rightBtn{text-align: right;padding-right: 2%;Button{font-size: 14px;margin-left: 20px;cursor: pointer;outline: none;}}
+                }
+                &>ul{ 
+                    width: 100%;position: absolute; left: 0;top: #{$contentTop+20};right: 0;bottom: 0;overflow-y: auto;
+                    &>li{font-size: 0.8rem;width: 160px;height: #{$scheduleLiHeight};line-height: #{$scheduleLiHeight};margin-left: 5%;display: inline-block;float: left; 
+                       label{font-size: #{$btnfontSize};.ivu-checkbox-inner{margin-right: 10px;}} 
+                       }
+                }
+              }
+           }
+       }
+    }
+
+    .ivu-modal{top: #{$ModelTop};}
+    .ModalUser,.ModalWeek{
+        .ivu-modal-body{
+                padding: #{$ModelPadding};
+                &>div.ivu-row{
+                    .ivu-col-span-7{text-align: right;}
+                    #userAdmin,#phoneAdmin,#msphoneAdmin,#eamilAdmin,#levelAdmin{text-indent: 10%;}
+                    &>div{height: 30px;line-height: 30px;margin: 10px 0;position: relative;
+                        span{display: inline-block;text-align: left;    white-space: nowrap;}
+                        input{width: 100%;border: 1px solid #eee;}
+                        &>.tooltipError{color: red;position: absolute; margin-left: 10px;}
+                        &>.tooltipSuccess{color: green;position: absolute; margin-left: 10px;}
+                    }
+                    .userParentDev:after{content: "*";font-size: 16px;color: red;position: absolute;right: -15px;top: 5px;}
+                    #start_timeIcon,#end_timeIcon,#end_DateIcon{font-size: 16px;color: red;position: absolute;right: -15px;top: 5px;}
+                    #start_timeFont,#end_timeFont,#end_timeSize{display: none;font-size: 12px;color: red;position: absolute;right: -80px;top: 5px;}
+                    #end_DateSize{font-size: 12px;color: red;position: absolute;right: -80px;top: 5px;}
+                    #msgInfo:after,#phoneInfo:after,#msphoneInfo:after,#emailInfo:after{font-size: 14px;color: red;position: absolute;right: -75px;top: 2px;}     
+                    #phoneInfo:after,#msphoneInfo:after,#emailInfo:after{content: "格式不对";}
+                    #msgInfo:after{content: "重复命名";}
+            }
+        }
+        
+    }
+    .ModalWeek{
+        .ivu-modal-body{
+            &>div.ivu-row{
+                &>div{
+                    input{width: 100%;}
+                }
+            }
+        }
+    }
+    

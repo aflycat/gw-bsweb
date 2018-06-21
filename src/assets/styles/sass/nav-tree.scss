@@ -1,0 +1,55 @@
+$oneH: 60px;
+// .nav-tree{
+//     li.no-child{
+//         padding-left: 12px;
+//         .title{
+//             line-height: $oneH;
+//         }
+//     }
+//     li.has-child{
+//         padding-left: 12px;
+//         .title{
+//             line-height: $oneH;
+//         }
+//         @for $i from 1 through 3 {
+
+//         }
+//         .nav-tree{
+//             &>li{
+//                 .title{
+//                     line-height: $oneH - 5px;
+//                 }
+                
+//             }
+//         }
+//     }
+// }
+// .nav-tree{
+//     li{
+//         cursor: pointer;
+//         padding-left: 12px;
+//         &>.title{
+//             line-height: $oneH;
+//         }
+//         &.no-child{
+//             height: $oneH;
+//         }
+//         &.has-child{
+//             height: auto;
+//             &>.title{
+//                 line-height: $oneH - 5px;
+//             }
+//             .nav-tree{
+//                 li{
+//                     padding-left: 12px;
+//                     &.no-child{
+//                         height: $oneH - 5px;
+//                     }
+//                     &.has-child{
+//                         height: auto;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

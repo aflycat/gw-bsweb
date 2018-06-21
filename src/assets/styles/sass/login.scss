@@ -1,0 +1,36 @@
+.gw{
+    .login{
+        $loginW: 600px;
+        $loginH:  300px;
+        $lineColoe: #eee;
+        $color: #333 !important;
+
+        width: $loginW;
+        height: $loginH;
+        position: absolute;left: 45%;top: 45%;
+        margin-left: -$loginW/2;margin-top: -$loginH/2;
+        padding:  40px 0px;text-align: center;
+        .loginLogo{
+            height: 100%;
+            border-right: 1px solid #{$lineColoe};
+            img{  position: relative;top: 50%;margin-top: -20%;}
+        }
+        .loginForm{
+            height: 100%;padding: 5% 20px 0 40px;
+            i{font-size: 1.8rem;}
+            input{color: #{$color};width: 100%;height: 2rem;text-indent: 10px;line-height: 2rem;border: 0;outline: none;background-color: white;}
+            input:-webkit-autofill {-webkit-box-shadow : 0 0 0px 1000px white inset ; }
+            &>div{border-bottom: 1px solid #{$lineColoe};margin-bottom: 20px;}
+            &>button{font-size: 16px;color: white;width: 100%;padding: 10px 0;border: 0;background-color: #05A2E5;cursor: pointer; transition: all 120ms; box-shadow: 0 0 1px 1px rgba(4,176,250,0.2); position: relative;outline: none;}
+            &>button.loading{
+                cursor: not-allowed;
+            }
+            &>button .spin-icon-load{
+                margin-left: 7px;
+                animation: ani-demo-spin 1s linear infinite;
+            }
+            &>button:hover{background: #04B0FA;}
+        }
+        // .InfoMsg{font-size: 14px;color: red;position: absolute;top: -30%;margin: 0 auto;}
+    }
+}

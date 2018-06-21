@@ -1,0 +1,88 @@
+@import './valuables', './mixin';
+.equips{
+    height: 100%;
+    .visual,.state{
+        height: 100%;
+    }
+    @at-root{
+        #realData{
+            width: 480px;
+            margin: 0 auto;
+            height: 360px;
+        }
+        .set-form{
+            .ivu-form-item{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .gw-tabs{
+            .tab-alarm{
+                color: #eb303a;
+            }
+        }
+    }
+    .gw-table{
+        &.yc{
+            thead{
+                th{
+                    width: 20%;
+                    &:nth-child(2), &:nth-child(5) {
+                        width: 10%;
+                    }
+                }
+            }
+            tbody{
+                td{
+                    width: 20%;
+                    &:nth-child(2), &:nth-child(5) {
+                        width: 10%;
+                    }
+                }
+            }
+        }
+        &.yx{
+            thead{
+                th{
+                    width: 20%;
+                }
+            }
+            tbody{
+                td{
+                    width: 20%;
+                }
+            }
+        }
+        td.status{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #35b468;
+                &.warning{
+                    background-color: #eb303a;
+                }
+            }
+        }
+        td.chart{
+            button{
+                width: 50px;
+                height: 26px;
+            }
+        }
+    }
+    .tab-set{
+        .ivu-card-body{
+            .ivu-btn{
+                font-size: 0.9rem; width: auto; height: auto;
+                padding: 6px 15px;
+                margin: 12px 10px;
+                // background-color: #ddd;
+            }
+        }
+    }
+    .ivu-btn-primary i{font-size: 1.5rem;}
+}

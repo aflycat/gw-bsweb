@@ -1,0 +1,1099 @@
+.snapshot {}
+
+.time-task {}
+
+.three-content {
+	width: 32%;
+	min-width: 356px;
+	height: 100%;
+	float: left;
+	margin-right: 2%;
+}
+
+.three-content:last-child {
+	margin-right: 0;
+}
+
+.table-toolbar {
+	width: 100%;
+	height: 33px;
+	margin: 14px 0;
+}
+
+.table-toolbar-right {
+	width: 40%;
+	float: right;
+	margin-top: -37px;
+}
+
+.table-toolbar span {
+	font-size: 16px;
+	color: #2e2e2e;
+	padding: 8.5px;
+	display: flex;
+	align-items: center;
+	float: left;
+}
+
+.table-toolbar button {
+	padding: 8.5px 21.5px;
+	background: #2d8cf0;
+	font-size: 14px;
+	color: #fff;
+	border: 0;
+	float: right;
+	margin-left: 10px;
+	position: relative;
+	right: 1px;
+}
+
+.table-toolbar button:hover {
+	cursor: pointer;
+}
+
+.task-modal .ivu-modal-content {
+	border-radius: 0px;
+}
+
+.task-modal .ivu-modal-header {
+	padding: 8px 16px;
+}
+
+.task-modal .ivu-modal-header p,
+.task-modal .ivu-modal-header-inner {
+	height: 30px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #1c2438;
+	font-weight: 500;
+}
+
+.task-modal .ivu-modal-body {
+	height: 450px;
+}
+
+.task-modal .ivu-btn {
+	font-weight: 500;
+	padding: 5px 20px;
+	font-size: 14px;
+	border-radius: 0px;
+}
+
+.task-modal .ivu-btn-text {
+	color: #fff;
+	background-color: #B5B5B5;
+	border-color: #B5B5B5;
+	font-size: 14px;
+}
+
+.one-third-modal {
+	width: 33%;
+	height: 100%;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #303030;
+	float: left;
+}
+
+.one-third-modal .content-title {
+	height: 10%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	/*justify-content: flex-start;*/
+	padding-left: 2%;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+.one-third-modal .content {
+	height: 90%;
+	width: 96%;
+	margin: auto;
+	/*border: 1px solid #f00;
+	box-sizing: border-box;*/
+}
+
+.one-third-modal .content .input-title {
+	margin: 10px 0 3px;
+}
+
+.one-third-modal .content .ivu-input-wrapper>.ivu-input {
+	border-radius: 0px;
+}
+
+.one-third-modal .content .execute-type .ivu-radio-wrapper {
+	font-size: 15px;
+	margin: 4px 0;
+	/*float: left;*/
+}
+
+.one-third-modal .content .execute-type .ivu-input-wrapper {
+	width: 100px;
+}
+
+.one-third-modal .content .execute-type .ivu-input-wrapper>.ivu-input {
+	width: 100px;
+	font-size: 14px;
+}
+
+.one-third-modal .content .execute-type .ivu-checkbox-wrapper {
+	font-size: 15px;
+	margin: 6px 0;
+}
+
+.one-third-modal .content .execute-type .ivu-input-number {
+	border-radius: 0px;
+	width: 70px;
+	line-height: 0;
+	font-size: 14px;
+}
+
+.one-third-modal .content .execute-type .ivu-date-picker {
+	width: 0;
+}
+
+.one-third-modal .content .ivu-date-picker {
+	width: 100%;
+}
+
+.half-modal {
+	width: 66%;
+	height: 100%;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #303030;
+	float: right;
+}
+
+.half-modal .content-title {
+	height: 10%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	/*justify-content: flex-start;*/
+	padding-left: 2%;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+.half-modal .half-content {
+	height: 90%;
+	width: 50%;
+	padding: 0 1%;
+	/*border: 1px solid #f00;
+	box-sizing: border-box;*/
+	float: left;
+}
+
+.half-modal .half-content:last-child {
+	border-left: 0px;
+	float: right;
+}
+
+.half-modal .half-content .loopCycleUl {
+	width: 100%;
+	height: 80%;
+	overflow-y: auto;
+}
+
+.half-modal .half-content .loopCycleUl::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 4px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+
+.half-modal .half-content .loopCycleUl::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.half-modal .half-content .loopCycleUl::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.half-modal .half-content .loopCycleUl li {
+	width: 100%;
+	/*height: 30px;*/
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	font-size: 14px;
+	/*white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;*/
+}
+
+.half-modal .half-content .loopCycleUl li:nth-child(even) {
+	background: #fff;
+}
+
+.half-modal .half-content .loopCycleUl li:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+.half-modal .half-content .input-title {
+	margin: 10px 0 3px;
+}
+
+.half-modal .half-content .ivu-input-wrapper>.ivu-input {
+	border-radius: 0px;
+}
+
+.half-modal .half-content .ivu-select .ivu-select-selection {
+	border-radius: 0px;
+}
+
+.half-modal .half-content .action-type .ivu-radio-wrapper {
+	font-size: 15px;
+	margin: 10px 0;
+}
+
+.half-modal .half-content .action-type .ivu-input-number {
+	border-radius: 0px;
+	width: 87px;
+	line-height: 0;
+	font-size: 14px;
+	margin: 0 5px 5px 0px;
+}
+
+.task-modal .ivu-btn-primary {
+	background-color: #2d8cf0;
+}
+
+.half-modal .half-content .insertBtn {
+	width: 36%;
+	height: 35px;
+	font-size: 15px;
+	position: relative;
+	left: 32%;
+	top: 20px;
+	background-color: #2d8cf0;
+	color: #fff;
+}
+
+.common-smalltable .ivu-input:focus {
+	border-width: 0;
+	border-color: #f00;
+	outline: 0;
+	-webkit-box-shadow: 0 0 0 0px rgba(237, 63, 20, .2);
+	box-shadow: 0 0 0 0px rgba(237, 63, 20, .2)
+}
+
+.common-smalltable .ivu-select-visible .ivu-select-selection {
+	border-width: 0;
+	border-color: #57a3f3;
+	outline: 0;
+	box-shadow: 0 0 0 0px rgba(45, 140, 240, .2);
+}
+
+.common-smalltable .ivu-select:focus .ivu-select-selection {
+	border-width: 0;
+	border-color: #57a3f3;
+	outline: 0;
+	box-shadow: 0 0 0 0px rgba(45, 140, 240, .2);
+}
+
+.half-modal .half-content .optionBtn {
+	width: 28%;
+	height: 33px;
+	font-size: 15px;
+	margin-left: 6px;
+	position: relative;
+	top: 20px;
+}
+
+.common-moal .ivu-modal-content {
+	border-radius: 0px;
+}
+
+.common-moal .ivu-modal-header {
+	padding: 8px 16px;
+}
+
+.common-moal .ivu-modal-header p,
+.common-moal .ivu-modal-header-inner {
+	height: 30px;
+	line-height: 35px;
+	font-size: 16px;
+	color: #1c2438;
+	font-weight: 500;
+}
+
+.common-moal .ivu-btn {
+	font-weight: 500;
+	padding: 5px 20px;
+	font-size: 14px;
+	border-radius: 0px;
+}
+
+.common-moal .ivu-btn-text {
+	color: #fff;
+	background-color: #B5B5B5;
+	border-color: #B5B5B5;
+	font-size: 14px;
+}
+
+.common-moal-content h1 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.color-error {
+	color: #eb303a;
+}
+
+.color-warn {
+	color: #EC8B2E;
+}
+
+.color-info {
+	color: #4CC7ED;
+}
+
+.color-set {
+	color: #F8D055;
+}
+
+.bg_disabled {
+	background: #DDDDDD !important;
+	color: #fff !important;
+}
+
+.common-table {
+	width: 100%;
+	height: 100%;
+}
+
+.common-table table {
+	width: 100%;
+	height: 86%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.common-table table thead tr {
+	background: #fff;
+	cursor: pointer;
+}
+
+.common-table table thead tr th {
+	padding: 12px 10px;
+	color: #858585;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: left;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.common-table table thead tr th:first-child {
+	width: 10%;
+	text-align: center;
+}
+
+.common-table table thead tr th:nth-child(3) {
+	width: 40%;
+}
+
+.common-table table thead tr th:nth-child(4) {
+	width: 10%;
+	text-align: center;
+}
+
+.common-table table tbody {
+	display: block;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.common-table table tbody::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 4px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+
+.common-table table tbody::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.common-table table tbody::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.common-table table thead,
+.common-table tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.common-table table tbody tr td {
+	padding: 6px 10px;
+	color: #2e2e2e;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.common-table table tbody tr td:first-child {
+	width: 10%;
+	text-align: center;
+}
+
+.common-table table tbody tr td:nth-child(3) {
+	width: 40%;
+}
+
+.common-table table tbody tr td:nth-child(4) {
+	width: 10%;
+	text-align: center;
+}
+
+.common-table table tbody tr td>i {
+	/*width: 20px;
+	height: 20px;*/
+	font-size: 1.5rem;
+	color: #05A2E5;
+}
+
+.common-table table tbody tr td>button {
+	width: 63px;
+	height: 31px;
+	background: #2d8cf0;
+	font-size: 14px;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
+}
+
+.common-table table tbody tr td>p {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+
+.common-table table tbody tr {
+	/*-webkit-transition: all 300ms linear 0s;-moz-transition: all 300ms linear 0s;-o-transition: all 300ms linear 0s;transition: all 300ms linear 0s;*/
+}
+
+.common-table table tbody tr:nth-child(even) {
+	background: #fff;
+}
+
+.common-table table tbody tr:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+.common-table table tbody>.even {
+	background: rgba(0, 0, 0, .13)!important;
+}
+
+.common-table table tbody>.odd {
+	background-color: transparent!important;
+}
+
+.common-table table tbody tr:hover {
+	background: rgba(255, 255, 255, .2)!important;
+}
+
+.common-table table tbody>.active {
+	background: rgba(255, 255, 255, .2)!important;
+}
+
+.common-table table tbody>.hiddentd {
+	background: rgba(0, 0, 0, .13)!important;
+}
+
+.common-table table tbody>.hiddentd:hover {
+	background: rgba(0, 0, 0, .13)!important;
+}
+
+.common-table table tbody>.hiddentd td {
+	padding: 0!important;
+}
+
+.common-smalltable {
+	width: 100%;
+	height: 100%;
+}
+
+.three-smalltable {
+	height: 85%;
+}
+
+.common-smalltable table {
+	width: 100%;
+	height: 88%;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.three-smalltable table {
+	height: 99%;
+	border: 1px solid #ddd;
+}
+
+.common-smalltable table tbody {
+	display: block;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.three-smalltable table tbody {
+	height: 92.5%;
+}
+
+.common-smalltable table tbody::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 4px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+
+.common-smalltable table tbody::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.common-smalltable table tbody::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.common-smalltable table thead,
+.common-smalltable tbody tr {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	border: 0;
+	border-left: 2px solid rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+}
+
+.common-smalltable table thead tr {
+	background: #f9f9f9;
+}
+
+.common-smalltable table thead tr th {
+	padding: 10px 10px;
+	color: #858585;
+	font-size: 13px;
+	font-weight: 500;
+	text-align: center;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.common-smalltable table tbody {
+	color: #2e2e2e;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.common-smalltable table tbody tr td {
+	/*padding: 11px 10px;*/
+	padding: 0px;
+	/*padding: 2px 1px;*/
+}
+
+.common-smalltable-checkbox table thead tr th {
+	text-align: left;
+}
+
+.common-smalltable-checkbox table tbody tr td {
+	padding: 12px 10px;
+	/*padding: 2px 1px;*/
+	text-align: left;
+}
+
+.common-smalltable-checkbox table tbody tr td>font {
+	font-weight: 600;
+	font-size: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.common-smalltable-checkbox table tbody tr td .ivu-checkbox-wrapper {
+	/*position: relative;
+	left: 20%;*/
+	/*text-align: center;*/
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.common-smalltable-checkboxgroup {
+	width: 75%;
+	height: 100%;float: left;
+}
+
+.common-smalltable-checkboxgroup-tasklist{
+	width: 25%;
+	height: 100%;
+}
+
+.common-smalltable-checkboxgroup table tbody tr {
+	border: 0;
+	border-left: 2px solid rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+}
+
+.common-smalltable-checkboxgroup table thead tr th {
+	text-align: center;
+}
+
+.common-smalltable-checkboxgroup table tbody tr td {
+	text-align: center;
+}
+
+.common-smalltable-checkboxgroup-tasklist table thead tr th {
+	text-align: left;
+}
+
+.common-smalltable-checkboxgroup-tasklist table tbody tr td {
+	text-align: left;
+}
+
+.common-smalltable-checkboxgroup-tasklist table tbody tr td>font {
+	padding: 20px 8px;
+}
+
+.common-smalltable-checkboxgroup table tbody tr td>font {
+	font-weight: 600;
+	font-size: 15px;
+	padding: 10px 8px 5px;
+	display: block;
+	/*line-height: 30px;*/
+}
+
+.common-smalltable-checkboxgroup table tr td .specContent {
+	clear: both;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	padding: 0px 10px;
+	margin: 0px;
+}
+
+.common-smalltable-checkboxgroup table tr td .ivu-date-picker {
+	width: 100%;
+}
+
+.common-smalltable-checkboxgroup table tr td .ivu-date-picker .ivu-date-picker-rel {
+	/*top: 1px;*/
+}
+
+.common-smalltable-checkboxgroup table tbody tr td>.ivu-input-wrapper>.ivu-input {
+	text-align: center !important;
+	border: 1px solid #dddee1 !important;
+}
+
+.common-smalltable-checkboxgroup table tr td .ivu-date-picker .ivu-input {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 14px;
+	border: 0;
+	border-top: 1px solid #dddee1;
+	border-bottom: 1px solid #dddee1;
+	border-right: 1px solid #dddee1;
+	height: 36px;
+	border-radius: 0px;
+	text-align: center;
+	margin-top: -2px;
+}
+
+.common-smalltable-checkboxgroup table tbody tr td .ivu-checkbox-wrapper {
+	display: block;
+	padding: 6px 9px;
+	font-size: 14px;
+}
+
+.common-smalltable-checkboxgroup table tbody tr td i {
+	color: #05A2E5;
+	font-size: 18px;
+}
+
+.common-smalltable table tbody tr td>.ivu-input-wrapper>.ivu-input {
+	box-sizing: border-box;
+	height: 36px;
+	font-size: 14px;
+	border: 0px solid #dddee1;
+	border-radius: 0px;
+	text-align: center;
+	margin-top: -1px;
+}
+
+.common-smalltable table tbody tr td>.ivu-input-wrapper>.ivu-input:hover {
+	border: 0px solid #dddee1;
+}
+
+.common-smalltable table tbody tr td>.ivu-select>.ivu-select-selection {
+	border-radius: 0px;
+	border: 0px solid #dddee1;
+	/*top: -1px;*/
+}
+
+.common-smalltable table tbody tr td .ivu-select-single .ivu-select-selection {
+	height: 36px;
+	position: relative;
+}
+
+.common-smalltable table tbody tr td>.ivu-select>.ivu-select-selection .ivu-select-input {
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	/*margin-top: 2px;*/
+}
+
+.common-smalltable table tbody tr td>i {
+	width: 20px;
+	height: 20px;
+	font-size: 18px;
+}
+
+.common-smalltable table tbody tr td>button {
+	padding: 8px 9px;
+	background: #2d8cf0;
+	font-size: 14px;
+	color: #fff;
+	border: 0;
+}
+
+.common-smalltable table tbody tr:nth-child(even) {
+	background: #f9f9f9;
+}
+
+.common-smalltable table tbody tr:nth-child(odd) {
+	background: #fff;
+}
+
+.common-smalltable table tbody tr:nth-child(even) input {
+	background: #f9f9f9;
+}
+
+.common-smalltable table tbody tr:nth-child(odd) input {
+	background: #fff;
+}
+
+.common-smalltable table tbody>.even {
+	background: rgba(0, 0, 0, .13)!important;
+}
+
+.common-smalltable table tbody>.odd {
+	background-color: transparent!important;
+}
+
+.common-smalltable table tbody tr:hover {
+	background: #E4E5E7;
+	cursor: pointer;
+}
+
+.common-smalltable table tbody>.active {
+	background: rgba(255, 255, 255, .2)!important;
+}
+
+.common-smalltable table tbody>.hiddentd {
+	background: rgba(0, 0, 0, .13)!important;
+}
+
+.common-smalltable table tbody>.hiddentd:hover {
+	background: rgba(0, 0, 0, .13)!important;
+}
+
+.common-smalltable table tbody>.hiddentd td {
+	padding: 0!important;
+}
+
+.activeTable {
+	border-left: 2px solid #2d8cf0 !important;
+	box-sizing: border-box;
+	color: #2d8cf0;
+	/*background: #2d8cf0 !important;
+	color: #fff;*/
+}
+
+.activeSpecTable {
+	/*background: #6699FF !important;
+	color: #000;*/
+	border-left: 2px solid #2d8cf0 !important;
+	box-sizing: border-box;
+}
+
+.common-smalltable table tr td .spanContent {
+	clear: both;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+.common-smalltable table tr td .spanContent font {
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.common-smalltable table tr td .inputContent {
+	clear: both;
+	width: 100%;
+	height: 36px;
+	margin-top: 1px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.common-smalltable table tr td .inputContent>input {
+	width: 100%;
+	border-radius: 0px;
+	height: 37px;
+	border: 1px solid #dadada;
+	border-right: 0px;
+	box-sizing: border-box;
+	text-align: center;
+	outline: 0;
+	background: #fff;
+	margin-top: -1px;
+}
+
+.common-smalltable table tr td:last-child .inputContent input {
+	border-right: 1px solid #dadada;
+}
+
+
+/* 主内容界面边框大小 */
+
+.gw-index .main .main-body .snapashot {
+	width: 100%;
+	height: 100%;
+	-webkit-box-shadow: 0px 0px 0px 0px #dadada;
+	box-shadow: 0px 0px 0px 0px #dadada;
+	min-width: 1140px;
+}
+
+.common-tab {
+	width: 100%;
+	min-width: 700px;
+	height: 100% !important;
+}
+
+.common-tab .ivu-tabs {
+	height: 100%;
+	overflow: visible;
+}
+
+
+/* tab列表容器边框 */
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar {
+	border-bottom: 0px;
+	margin-bottom: 16px;
+}
+
+
+/* tab列表边框 */
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav {
+	border: 1px solid #dddee1;
+	border-top: 1px solid rgba(0, 0, 0, 0);
+}
+
+
+/* tab列表高度 */
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav-container {
+	height: 41px;
+}
+
+
+/* tab内容高度 */
+
+.common-tab .ivu-tabs-card>.ivu-tabs-content {
+	height: 100%;
+	margin-top: -16px;
+	position: relative;
+}
+
+
+/* tab内容背景色、边框 */
+
+.common-tab .ivu-tabs-card>.ivu-tabs-content>.ivu-tabs-tabpane {
+	background: #fff;
+	border-top: 1px solid #EEEEEE;
+	min-width: 1115px;
+	height: 100%;
+}
+
+.tab-content-border .ivu-tabs-card>.ivu-tabs-content>.ivu-tabs-tabpane {
+	background: #fff;
+	/*border: 1px solid #fff;*/
+	border-top: 1px solid #EEEEEE;
+	height: 100%;
+	position: relative;
+}
+
+
+/* tab列表默认大小、颜色样式 */
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab {
+	margin: 0;
+	height: 40px;
+	line-height: 24px;
+	color: #2e2e2e;
+	font-size: 15px;
+	padding: 8px 16px;
+	text-align: center;
+	min-width: 80px;
+	border: 0px;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	box-sizing: border-box;
+	border-radius: 0;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background: #F9F9F9
+}
+
+
+/* tab列表最后一个右边框为0 */
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab:last-child {
+	border-right: 0px;
+}
+
+
+/* tab列表选中样式 */
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-tab-active {
+	height: 40px;
+	/*background: #fff;*/
+	box-sizing: border-box;
+	border-top: 1px solid #2d8cf0;
+	border-right: 1px solid #ddd;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	color: #2d8cf0;
+}
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab .ivu-icon {
+	width: 32px;
+	height: 32px;
+	position: relative;
+	top: -22px;
+	margin-right: 0px;
+	font-size: 0px;
+	background-position: 0% 0%;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab:nth-of-type(2) .ivu-icon {
+	background: url(../img/infor/all.png) no-repeat;
+	background-position: 0% 50%;
+}
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab:nth-of-type(3) .ivu-icon {
+	background: url(../img/infor/Errors.png);
+}
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab:nth-of-type(4) .ivu-icon {
+	background: url(../img/infor/Warnings.png);
+}
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab:nth-of-type(5) .ivu-icon {
+	background: url(../img/infor/Informations.png);
+}
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab:nth-of-type(6) .ivu-icon {
+	background: url(../img/infor/Settings.png);
+}
+
+.common-tab .ivu-tabs.ivu-tabs-card>.ivu-tabs-bar .ivu-tabs-nav .ivu-tabs-tab:nth-of-type(7) .ivu-icon {
+	background: url(../img/infor/Assets.png);
+}
+
+.modalAlert h1 {
+	font-size: 1rem;
+	font-weight: 200;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.modalAlert p {
+	margin-top: 20px;
+}
+
+.modalAlert .groupCheck {
+	padding: 20px 0;
+	text-indent: 10px;
+	border: 1px solid #eee;
+}
+
+.modalAlert .groupCheck>.groupCheckChild {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+}
+
+.modalAlert .groupCheck>.groupCheckChild:nth-child(2n) {
+	background: white;
+}
+
+.modalAlert .groupCheck>.groupCheckChild:nth-child(2n+1) {
+	background: #F9F9F9;
+}
+
+.modalAlert .groupCheck>.groupCheckChild:hover {
+	background: #eee;
+}
+
+.modalAlert .ivu-btn-primary {
+	color: #DEF0F9;
+	width: 83px;
+	height: 31px;
+	background-color: #2d8cf0;
+	border-color: #2d8cf0;
+	border-radius: 0;
+}
+
+.ivu-modal-content {
+	border-radius: 0 !important;
+}

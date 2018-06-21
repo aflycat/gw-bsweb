@@ -1,0 +1,67 @@
+@import './valuables';
+.home{
+    $scheduleLiHeight: 40px;
+    $selectEquipColor: #05A2E5; 
+    $contentTop: 40px;
+    $IconFontSize: 22px;
+    $searchHeight: 32px;
+    $MenuColor: #999;
+    $MenuColorHover: #05A2E5;
+
+   &>h1{font-size: 1.5rem;font-weight: 200;height: 15%;padding-top: 2%;text-align: center;}
+   &>ul{
+       height: 15%;  margin-bottom: 2%;
+       &>li{
+        width: 15%;max-width: 200px;height: 100%;display: inline-block;border: 0;
+        .activeSnapshot{opacity: 0.3;}
+        &>div{width: 160px;height: 100%;white-space: nowrap;padding: 0 10%;cursor: pointer;
+            color: #{ $MenuColor};font-size: 0.9rem; display: inline-block;
+            border-radius: 15px;outline: none;border: 0;
+            h4{font-size: 1.2rem;color: white;height: 50%;padding-top: 15%;font-weight: 500;text-align: left;}
+            &>div{height: 30%;}
+            .infoTop{color: white;text-align: left;}
+            .infoTop>span{font-size: 2rem;}
+            .infoBottom{color: white;white-space: nowrap;}
+            .infoBottom p{font-size: 12px;margin: 3px 0;text-align: left;}
+            .infoBottom span{margin-left: 10px;}
+        }
+        &>div[dataClass="snaBtn0"]{background: #EF4B56;}
+        &>div[dataClass="snaBtn1"]{background: #F1B90C;}
+        &>div[dataClass="snaBtn2"]{background: #02A1A7;}
+        &>div[dataClass="snaBtn3"]{background: #43A7DB;}
+        &>div[dataClass="snaBtn4"]{background: #6D417C;}
+        &>a:hover{color: #{ $MenuColorHover};border: 1px solid #{ $MenuColorHover};}
+       }
+    }
+    &>div.snapashot{
+        height: 65% !important;overflow: auto;position: relative;
+        &>table{
+            thead{box-shadow: 0px 0px 0px transparent !important;border-top: 1px solid #ddd;}
+            tr{display: flex;
+                th{flex: 1;}
+                th:nth-child(3){flex: 2;}
+            }
+            tbody tr td{
+                .ivu-btn-info{ color: #{$btnFontColor};width: 63px;height: #{$btnH};background-color: #{$btnBackground};border-color: #{$btnBackground};border-radius: 0;}
+                flex: 1;
+                i{font-size: #{ $IconFontSize/1.2};margin: 0 10px;color: #{$selectEquipColor};}
+                p{width: 100%;white-space: nowrap;overflow:hidden;text-overflow: ellipsis;    text-align: left;}
+            }
+            tbody tr td:nth-child(3){flex: 2;overflow: hidden;}
+
+        }
+    }
+
+}
+.modalAlert{
+    h1{font-size: 1rem;font-weight: 200;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+     p{margin-top: 20px;}
+    .groupCheck {padding: 20px 0;text-indent: 10px;border: 1px solid #eee;
+      &>.groupCheckChild{height: 30px;line-height: 30px;display: block;}
+      &>.groupCheckChild:nth-child(2n){background: white;}
+      &>.groupCheckChild:nth-child(2n+1){background: #F9F9F9;}
+      &>.groupCheckChild:hover{background: #eee;}
+    }
+    .ivu-btn-primary{color: #{$btnFontColor};width: #{$btnW};height: #{$btnH};background-color: #{$btnBackground};border-color: #{$btnBackground};border-radius: 0;}
+}
+.ivu-modal-content{    border-radius: 0 !important;}

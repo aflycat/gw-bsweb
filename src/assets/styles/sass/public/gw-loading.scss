@@ -1,0 +1,16 @@
+.gw-loading{
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 70;
+   background-color: rgba(255,255,255,0.2);
+   .spin-icon-load{
+       animation: ani-demo-spin 1s linear infinite;
+   }
+   .txt{
+       font-size: 24px;
+       margin-top: 6px;
+   }
+}
